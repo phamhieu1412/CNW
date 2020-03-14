@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Admin Login";
+    Layout = "~/Views/Login/_LayoutLogin.cshtml";
+}
+
+
+@*logo*@
+<div class="container">
+    <div class="row block">
+        <h3>User</h3>
+    </div>
+</div>
+@*text sign in*@
+<div>
+    <h3>SIGN IN</h3>
+</div>
+
+<div class="container">
+    <div class="row block">
+        <div class="new-customer">
+            <p><span>New customer?</span></p>
+
+            <div>
+                <h6>With your account you can ...</h6>
+
+                <ul>
+                    <li>Save your favourites for faster ordering.</li>
+                    <li>Speed through checkout with saved delivery addresses and payment information.</li>
+                    <li>Get exclusive deals, right in your inbox.</li>
+                </ul>
+
+                <button class="btn-login">Create an account</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row block">
+        <div class="sign-in">
+            <p><span>Or sign in</span></p>
+
+            <form>
+                <h6>Email Address</h6>
+                <input type="text" name="email" placeholder="Email which registered" />
+
+                <h6>Your Password</h6>
+                <input type="password" name="password" placeholder="Password to sign in your account" />
+            </form>
+
+            <div>
+                <a href="">Forgot your password ?</a>
+            </div>
+
+            <button class="btn-login">Sign In</button>
+        </div>
+    </div>
+
+    <div class="row block">
+        <div class="sign-in-with">
+            <p><span>Or sign in with</span></p>
+
+            <div class="button">
+                <button class="facebook"><a href="https://facebook.com">Facebook</a></button>
+
+                <button class="google"><a href="https://google.com">Google+</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
