@@ -11,9 +11,12 @@ namespace WebPizza.Controllers
     public class HomeController : Controller
     {
         // GET: Home
+
+        FastFood fastfood = new FastFood();
+
         public ActionResult Index(long? id)
         {
-            FastFood fastfood = new FastFood();
+            //FastFood fastfood = new FastFood();
 
             List<Mon> mons = new List<Mon>();
             if (!id.HasValue)
@@ -36,7 +39,15 @@ namespace WebPizza.Controllers
 
         public ActionResult Menu()
         {
+            List<Mon> monsMenu = new List<Mon>();
+            monsMenu = fastfood.Mons.Where(mon => mon.MaLM == 1).ToList();
             
+
+            LoaiMonFunc loaimonsMenu = new LoaiMonFunc();
+            List<LoaiMon> loaimonMenu = loaimonsMenu.loaimons();
+            ViewBag.LoaiMon = loaimonMenu;
+
+            ViewBag.MonMenu = monsMenu;
 
             return View();
         }

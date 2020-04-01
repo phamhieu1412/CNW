@@ -9,7 +9,6 @@
     <div class="container h-100">
         <div class="dplay-tbl">
             <div class="dplay-tbl-cell center-text color-white pt-90">
-                <h5><b>THE BEST IN TOWN</b></h5>
                 <h2 class="mt-30 mb-15">Menu</h2>
             </div><!-- dplay-tbl-cell -->
         </div><!-- dplay-tbl -->
@@ -66,87 +65,21 @@
 <section class="bg-lite-blue">
     <div class="container">
         <div class="row">
-            
+
+            @foreach (var item in ViewBag.MonMenu)
+            {
                 <div class="col-md-6">
                     <div class="sided-90x mb-30 ">
-                        <div class="s-left"><img class="br-3" src="images/menu-1-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                        <div class="s-left"><img class="br-3" src="@Url.Content(@item.UrlImg)" alt="@item.TenMon"></div><!--s-left-->
                         <div class="s-right">
-                            <h5 class="mb-10"><b>ACX</b><b class="color-primary float-right">$12.00</b></h5>
-                            <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
+                            <h5 class="mb-10"><b>@item.TenMon</b><b class="color-primary float-right">@item.Gia VND</b></h5>
+                            <p class="pr-70">@item.MoTaNgan</p>
                         </div><!--s-right-->
                     </div><!-- sided-90x -->
                 </div><!-- food-menu -->
-            
-                <div class="col-md-6">
-                    <div class="sided-90x mb-30 ">
-                        <div class="s-left"><img class="br-3" src="images/menu-2-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                        <div class="s-right">
-                            <h5 class="mb-10"><b>Italian pasta</b><b class="color-primary float-right">$20.00</b></h5>
-                            <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
-                        </div><!--s-right-->
-                    </div><!-- sided-90x -->
-                </div><!-- food-menu -->
+            }
 
-                <div class="col-md-6">
-                    <div class="sided-90x mb-30 ">
-                        <div class="s-left"><img class="br-3" src="images/menu-3-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                        <div class="s-right">
-                            <h5 class="mb-10"><b>Pizza Prosciuto</b><b class="color-primary float-right">$12.00</b></h5>
-                            <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                        </div><!--s-right-->
-                    </div><!-- sided-90x -->
-                </div><!-- food-menu -->
-
-                <div class="col-md-6">
-                    <div class="sided-90x mb-30">
-                        <div class="s-left"><img class="br-3" src="images/menu-4-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                        <div class="s-right">
-                            <h5 class="mb-10"><b>Broschettas</b><b class="color-primary float-right">$6.00</b></h5>
-                            <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
-                        </div><!--s-right-->
-                    </div><!-- sided-90x -->
-                </div><!-- food-menu -->
-
-                <div class="col-md-6">
-                    <div class="sided-90x mb-30">
-                        <div class="s-left"><img class="br-3" src="images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                        <div class="s-right">
-                            <h5 class="mb-10"><b>Pizza Margherita</b><b class="color-primary float-right">$12.00</b></h5>
-                            <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                        </div><!--s-right-->
-                    </div><!-- sided-90x -->
-                </div><!-- food-menu -->
-
-                <div class="col-md-6">
-                    <div class="sided-90x mb-30 ">
-                        <div class="s-left"><img class="br-3" src="images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                        <div class="s-right">
-                            <h5 class="mb-10"><b>Italian pasta</b><b class="color-primary float-right">$20.00</b></h5>
-                            <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
-                        </div><!--s-right-->
-                    </div><!-- sided-90x -->
-                </div><!-- food-menu -->
-
-                <div class="col-md-6">
-                    <div class="sided-90x mb-30">
-                        <div class="s-left"><img class="br-3" src="images/menu-7-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                        <div class="s-right">
-                            <h5 class="mb-10"><b>Pizza Prosciuto</b><b class="color-primary float-right">$12.00</b></h5>
-                            <p class="pr-70">Maecenas fermentum tortor id fringilla  molestie. In hac habitasse platea dictumst. </p>
-                        </div><!--s-right-->
-                    </div><!-- sided-90x -->
-                </div><!-- food-menu -->
-
-                <div class="col-md-6">
-                    <div class="sided-90x mb-30 ">
-                        <div class="s-left"><img class="br-3" src="images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
-                        <div class="s-right">
-                            <h5 class="mb-10"><b>Broschettas</b><b class="color-primary float-right">$6.00</b></h5>
-                            <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
-                        </div><!--s-right-->
-                    </div><!-- sided-90x -->
-                </div><!-- food-menu -->
-            </div><!-- row -->
+        </div><!-- row -->
     </div><!-- container -->
 </section>
 
@@ -155,7 +88,7 @@
     <div class="pos-bottom triangle-up"></div>
     <div class="pos-top triangle-bottom"></div>
     <div class="container">
-        <h4 class="font-30 font-sm-20  center-text mb-25">Add a fresh <b>Salad</b> to your order</h4>
+        <h4 class="font-30 font-sm-20  center-text mb-25">Thêm một phần <b>Salad</b> sạch mỗi lần thưởng thức</h4>
     </div><!-- container -->
 </section>
 
