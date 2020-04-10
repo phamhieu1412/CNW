@@ -65,6 +65,32 @@ textarea:focus { outline-color: #EF0031; }
 .card i { font-size: 1.2em;}
 
 
+/* gio hàng */
+.container .right-area a.plr-20 {
+        position: relative;
+}
+.container .right-area a.plr-20 span.count-item {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-15px, 10px);
+} 
+/* Menu item */
+.story-area .row .menu-item {
+        border-radius: 10px;
+}
+/* event bay anhr */
+.img-product-fly {
+	position: absolute;
+	z-index: 9999;
+	width: 50px;
+	height: 50px;
+	object-fit: cover; /* auto thu nho */
+	border-radius: 100%;
+	border: 1px solid red;
+	transition: all 1s ease;
+	animation: fly-item 2.5s;
+}
 
 /* RESPONSIVE */
 

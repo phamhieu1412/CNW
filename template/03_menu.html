@@ -23,7 +23,10 @@
                 <a class="logo" href="#"><img src="images/Logo/Logo.png" alt="Logo"></a>
 
                 <div class="right-area">
-                        <a class="plr-20 color-white btn-fill-primary" href="#"><img src="images/Logo/cart-plus-solid.svg" alt="CartShop"></a>
+                        <a id="card-shop" class="plr-20 color-white btn-fill-primary" href="CartShop.html">
+                                <img src="images/Logo/cart-plus-solid.svg" alt="CartShop">
+                                <span class="item-increat count-item" data-count="0">0</span>
+                        </a>
                         <h6><a class="plr-20 color-white btn-fill-primary" href="#">ORDER: +84 123 456 789</a></h6>
                 </div><!-- right-area -->
 
@@ -47,7 +50,6 @@
         <div class="container h-100">
                 <div class="dplay-tbl">
                         <div class="dplay-tbl-cell center-text color-white pt-90">
-                                <h5><b>THE BEST IN TOWN</b></h5>
                                 <h2 class="mt-30 mb-15">Menu</h2>
                         </div><!-- dplay-tbl-cell -->
                 </div><!-- dplay-tbl -->
@@ -60,40 +62,62 @@
                 <div class="heading"><h3>Choose from Pizza</h3></div>
                 <div class="row">
                         <div class="col-lg-3 col-md-4  col-sm-6 ">
-                                <div class="center-text mb-30">
+                                <div class="center-text mb-30 main-item">
                                         <div class="ïmg-200x mlr-auto pos-relative">
-                                                <h6 class="ribbon-cont color-white"><div class="ribbon primary"></div><b>OFFER</b></h6>
-                                                <img src="images/seller-2-200x200.png" alt="">
+                                                <img src="images/Pizza/BBQ-Chicken-Pizza.jpg" class="menu-item" alt="">
                                         </div>
-                                        <h5 class="mt-20">Pizza Margherita</h5>
-                                        <h4 class="mt-5 color-primary"><b>$11.90</b></h4>
+                                        <h5 class="">Pizza Chicken BBQ</h5>
+                                        <h6 class="mt-5 color-primary">55.000 VNĐ</h6>
+                                        <h5 class=" dplay-inl-block m-10">
+                                                <a href="javascript:void(0);" class="btn-fill-primary secondary plr-25 btn-addToCart">
+                                                        <b>Mua Ngay</b>
+                                                </a>
+                                        </h5>
                                 </div><!--text-center-->
                         </div><!-- col-md-3 -->
 
                         <div class="col-lg-3 col-md-4  col-sm-6 ">
-                                <div class="center-text mb-30">
-                                        <div class="ïmg-200x mlr-auto pos-relative"><img src="images/seller-2-200x200.png" alt=""></div>
-                                        <h5 class="mt-20">Pizza Margherita</h5>
-                                        <h4 class="mt-5 color-primary"><b>$11.90</b></h4>
-                                </div><!--text-center-->
-                        </div><!-- col-md-3 -->
-
-                        <div class="col-lg-3 col-md-4  col-sm-6 ">
-                                <div class="center-text mb-30">
-                                        <div class="ïmg-200x mlr-auto pos-relative"><img src="images/seller-2-200x200.png" alt=""></div>
-                                        <h5 class="mt-20">Pizza Margherita</h5>
-                                        <h4 class="mt-5 color-primary"><b>$11.90</b></h4>
-                                </div><!--text-center-->
-                        </div><!-- col-md-3 -->
-
-                        <div class="col-lg-3 col-md-4  col-sm-6 ">
-                                <div class="center-text mb-30">
+                                <div class="center-text mb-30 main-item">
                                         <div class="ïmg-200x mlr-auto pos-relative">
-                                                <h6  class="ribbon-cont color-white"><div class="ribbon secondary"></div><b>SPECIALITY</b></h6>
-                                                <img src="images/seller-2-200x200.png" alt="">
+                                                <img src="images/Pizza/Chorizo-Pizza.jpg" class="menu-item" alt="">
                                         </div>
-                                        <h5 class="mt-20">Pizza Margherita</h5>
-                                        <h4 class="mt-5 color-primary"><b>$11.90</b></h4>
+                                        <h5 class="">Pizza Chorizo</h5>
+                                        <h6 class="mt-5 color-primary">65.000 VNĐ</h6>
+                                        <h5 class=" dplay-inl-block m-10">
+                                                <a href="javascript:void(0);" class="btn-fill-primary secondary plr-25 btn-addToCart">
+                                                        <b>Mua Ngay</b>
+                                                </a>
+                                        </h5>
+                                </div><!--text-center-->
+                        </div><!-- col-md-3 -->
+
+                        <div class="col-lg-3 col-md-4  col-sm-6 ">
+                                <div class="center-text mb-30 main-item">
+                                        <div class="ïmg-200x mlr-auto pos-relative">
+                                                <img src="images/Pizza/Hawaii-Pizza.jpg" class="menu-item" alt="">
+                                        </div>
+                                        <h5 class="">Pizza Hawaii</h5>
+                                        <h6 class="mt-5 color-primary">70.000 VNĐ</h6>
+                                        <h5 class=" dplay-inl-block m-10">
+                                                <a href="javascript:void(0);" class="btn-fill-primary secondary plr-25 btn-addToCart">
+                                                        <b>Mua Ngay</b>
+                                                </a>
+                                        </h5>
+                                </div><!--text-center-->
+                        </div><!-- col-md-3 -->
+
+                        <div class="col-lg-3 col-md-4  col-sm-6 ">
+                                <div class="center-text mb-30 main-item">
+                                        <div class="ïmg-200x mlr-auto pos-relative">
+                                                <img src="images/Pizza/Mexican-Pizza.jpg" class="menu-item" alt="">
+                                        </div>
+                                        <h5 class="">Pizza Mexico</h5>
+                                        <h6 class="mt-5 color-primary">105.000 VNĐ</h6>
+                                        <h5 class=" dplay-inl-block m-10">
+                                                <a href="javascript:void(0);" class="btn-fill-primary secondary plr-25 btn-addToCart">
+                                                        <b>Mua Ngay</b>
+                                                </a>
+                                        </h5>
                                 </div><!--text-center-->
                         </div><!-- col-md-3 -->
                 </div><!-- row-->
@@ -105,80 +129,120 @@
                 <div class="row">
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30 ">
-                                        <div class="s-left"><img class="br-3" src="images/menu-1-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/Pizza/Veggie-Pizza.jpg" alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Pizza Margherita</b><b class="color-primary float-right">$12.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-fill-primary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
                         </div><!-- food-menu -->
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30 ">
-                                        <div class="s-left"><img class="br-3" src="images/menu-2-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/Pizza/Smoke-Chicken-Pizza.jpg" alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Italian pasta</b><b class="color-primary float-right">$20.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-fill-primary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
                         </div><!-- food-menu -->
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30 ">
-                                        <div class="s-left"><img class="br-3" src="images/menu-3-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/Pizza/Salami-Pizza.jpg" alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Pizza Prosciuto</b><b class="color-primary float-right">$12.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-fill-primary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
                         </div><!-- food-menu -->
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30">
-                                        <div class="s-left"><img class="br-3" src="images/menu-4-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/Pizza/Meat-Lovers-Pizza.jpg" alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Broschettas</b><b class="color-primary float-right">$6.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-fill-primary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
                         </div><!-- food-menu -->
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30">
+                                <div class="sided-90x mb-30 main-item">
                                         <div class="s-left"><img class="br-3" src="images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Pizza Margherita</b><b class="color-primary float-right">$12.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-fill-primary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
                         </div><!-- food-menu -->
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30 ">
+                                <div class="sided-90x mb-30 main-item">
                                         <div class="s-left"><img class="br-3" src="images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Italian pasta</b><b class="color-primary float-right">$20.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-fill-primary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
                         </div><!-- food-menu -->
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30">
+                                <div class="sided-90x mb-30 main-item">
                                         <div class="s-left"><img class="br-3" src="images/menu-7-120x120.jpg"  alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Pizza Prosciuto</b><b class="color-primary float-right">$12.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-fill-primary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Maecenas fermentum tortor id fringilla  molestie. In hac habitasse platea dictumst. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
                         </div><!-- food-menu -->
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30 ">
+                                <div class="sided-90x mb-30 main-item">
                                         <div class="s-left"><img class="br-3" src="images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Broschettas</b><b class="color-primary float-right">$6.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-fill-primary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
@@ -199,69 +263,194 @@
 
 <section>
         <div class="container">
-                <div class="heading mb-sm-10"><h3>Choose from Pasta</h3></div>
-                <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                                <div class="sided-220x responsive mb-30 left-text center-sm-text">
-                                        <div class="s-left mlr-sm-auto"><img  src="images/pasta-1-300x300.png" alt="Menu Image"></div>
-                                        <div class="s-right">
-                                                <h5>Pizza Margherita</h5>
-                                                <h4 class="mtb-10"><b class="color-primary">$12.00</b></h4>
-                                                <p>Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                                        </div><!--s-right-->
-                                </div><!-- sided-90x -->
-                        </div><!-- col-md-6 -->
-
-                        <div class="col-md-12 col-lg-6">
-                                <div class="sided-220x responsive mb-30 left-text center-sm-text">
-                                        <div class="s-left mlr-sm-auto"><img  src="images/pasta-2-300x300.png" alt="Menu Image"></div>
-                                        <div class="s-right">
-                                                <h5>Pizza Margherita</h5>
-                                                <h4 class="mtb-10"><b class="color-primary">$12.00</b></h4>
-                                                <p>Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
-                                        </div><!--s-right-->
-                                </div><!-- sided-90x -->
-                        </div><!--col-md-6 -->
-                </div><!-- row-->
+                <div class="heading mb-sm-10"><h3>Choose from Menu</h3></div>
 
                 <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
-
+                <!-- Pasta -->
                 <div class="row">
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30">
+                                <div class="sided-90x mb-30 main-item">
                                         <div class="s-left"><img class="br-3" src="images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Pizza Margherita</b><b class="color-primary float-right">$12.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
                         </div><!-- food-menu -->
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30 ">
+                                <div class="sided-90x mb-30 main-item">
                                         <div class="s-left"><img class="br-3" src="images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Italian pasta</b><b class="color-primary float-right">$20.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
                         </div><!-- food-menu -->
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30">
+                                <div class="sided-90x mb-30 main-item">
                                         <div class="s-left"><img class="br-3" src="images/menu-7-120x120.jpg"  alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Pizza Prosciuto</b><b class="color-primary float-right">$12.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Maecenas fermentum tortor id fringilla  molestie. In hac habitasse platea dictumst. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
                         </div><!-- food-menu -->
 
                         <div class="col-md-6">
-                                <div class="sided-90x mb-30 ">
+                                <div class="sided-90x mb-30main-item ">
                                         <div class="s-left"><img class="br-3" src="images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
                                         <div class="s-right">
-                                                <h5 class="mb-10"><b>Broschettas</b><b class="color-primary float-right">$6.00</b></h5>
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
+                                                <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                </div><!-- row -->
+
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+                <!-- Salad -->
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
+                                                <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
+                                                <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/menu-7-120x120.jpg"  alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
+                                                <p class="pr-70">Maecenas fermentum tortor id fringilla  molestie. In hac habitasse platea dictumst. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
+                                                <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                </div><!-- row -->
+
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+                <!-- Nuoc -->
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
+                                                <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
+                                                <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/menu-7-120x120.jpg"  alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
+                                                <p class="pr-70">Maecenas fermentum tortor id fringilla  molestie. In hac habitasse platea dictumst. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30 main-item">
+                                        <div class="s-left"><img class="br-3" src="images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10">
+                                                        <b>Pizza Margherita</b>
+                                                        <a href="javascript:void(0);" class="float-right btn-primaryc secondary plr-5 btn-addToCart">
+                                                                <b>105.000 VNĐ</b>
+                                                        </a>
+                                                </h5>
                                                 <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
                                         </div><!--s-right-->
                                 </div><!-- sided-90x -->
