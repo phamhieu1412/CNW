@@ -14,11 +14,12 @@
 /* go back menu */
 .backMenu {
     background-color: #bab8b8;
+    padding: 5px 0;
 }
 .backMenu a {
     display: flex;
     align-items: center;
-    width: 80px;
+    width: 120px;
 }
 .backMenu a img {
     width: 10px;
